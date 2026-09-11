@@ -1,0 +1,436 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- INFORMATIONS DU SITE -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DBZ Final Stand Scripts</title>
+
+    <meta name="description"
+        content="Dragon Ball Z Final Stand scripts and resources">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🐉 <span>DBZ</span> Final Stand
+        </div>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#scripts">Scripts</a>
+
+            <a href="#about">About</a>
+
+            <a href="#discord">Discord</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ACCUEIL -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                DRAGON BALL Z FINAL STAND
+            </p>
+
+            <h1>
+                FINAL STAND<br>
+                <span>SCRIPTS</span>
+            </h1>
+
+            <p class="description">
+                Discover scripts and resources for
+                Dragon Ball Z Final Stand.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#scripts" class="button primary">
+                    View Scripts
+                </a>
+
+                <a href="#discord" class="button secondary">
+                    Discord
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SECTION DES SCRIPTS -->
+
+    <section id="scripts" class="scripts-section">
+
+        <div class="section-title">
+
+            <p>SCRIPTS</p>
+
+            <h2>
+                Our Scripts
+            </h2>
+
+            <span>
+                Select a script to view its information.
+            </span>
+
+        </div>
+
+
+
+        <!-- BARRE DE RECHERCHE -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔎 Search for a script..."
+                onkeyup="searchScripts()"
+            >
+
+        </div>
+
+
+
+        <!-- LISTE DES SCRIPTS -->
+
+        <div class="scripts-grid" id="scriptsGrid">
+
+
+            <!-- SCRIPT 1 -->
+
+            <div class="script-card">
+
+                <div class="script-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Auto Farm
+                </h3>
+
+                <p>
+                    Automation resource for
+                    Final Stand.
+                </p>
+
+                <div class="tags">
+
+                    <span>
+                        Final Stand
+                    </span>
+
+                    <span>
+                        Script
+                    </span>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a
+                        href="scripts/script1.txt"
+                        class="card-button"
+                        target="_blank"
+                    >
+                        View
+                    </a>
+
+                    <button
+                        class="card-button"
+                        onclick="copyScript('scripts/script1.txt')"
+                    >
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SCRIPT 2 -->
+
+            <div class="script-card">
+
+                <div class="script-icon">
+                    🔥
+                </div>
+
+                <h3>
+                    Auto Quest
+                </h3>
+
+                <p>
+                    Quest-related resource for
+                    Final Stand.
+                </p>
+
+                <div class="tags">
+
+                    <span>
+                        Quest
+                    </span>
+
+                    <span>
+                        Script
+                    </span>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a
+                        href="scripts/script2.txt"
+                        class="card-button"
+                        target="_blank"
+                    >
+                        View
+                    </a>
+
+                    <button
+                        class="card-button"
+                        onclick="copyScript('scripts/script2.txt')"
+                    >
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SCRIPT 3 -->
+
+            <div class="script-card">
+
+                <div class="script-icon">
+                    🐉
+                </div>
+
+                <h3>
+                    Galaxy Script
+                </h3>
+
+                <p>
+                    Script resource from the
+                    BLK Galaxy collection.
+                </p>
+
+                <div class="tags">
+
+                    <span>
+                        Galaxy
+                    </span>
+
+                    <span>
+                        Final Stand
+                    </span>
+
+                </div>
+
+                <div class="card-buttons">
+
+                    <a
+                        href="scripts/script3.txt"
+                        class="card-button"
+                        target="_blank"
+                    >
+                        View
+                    </a>
+
+                    <button
+                        class="card-button"
+                        onclick="copyScript('scripts/script3.txt')"
+                    >
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SECTION À PROPOS -->
+
+    <section id="about" class="about-section">
+
+        <div class="section-title">
+
+            <p>ABOUT</p>
+
+            <h2>
+                Dragon Ball Z Final Stand
+            </h2>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <h3>
+                🐉 Dragon Ball Z Final Stand
+            </h3>
+
+            <p>
+                Welcome to my Dragon Ball Z Final Stand website.
+                Here you can find scripts, resources and
+                updates related to my project.
+            </p>
+
+            <p>
+                Website created by
+                <strong>BLK_Galaxy</strong>.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DISCORD -->
+
+    <section id="discord" class="discord-section">
+
+        <div class="discord-box">
+
+            <h2>
+                Join the Discord
+            </h2>
+
+            <p>
+                Join the community to receive the latest
+                updates and news about the project.
+            </p>
+
+            <a
+                href="#"
+                class="button primary"
+            >
+                Join Discord
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 BLK_Galaxy — DBZ Final Stand
+        </p>
+
+        <p>
+            This project is not affiliated with Roblox
+            or Dragon Ball.
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        // RECHERCHE DES SCRIPTS
+
+        function searchScripts() {
+
+            const input =
+                document
+                .getElementById("searchInput")
+                .value
+                .toLowerCase();
+
+            const cards =
+                document.querySelectorAll(".script-card");
+
+            cards.forEach(function(card) {
+
+                const text =
+                    card.innerText.toLowerCase();
+
+                if (text.includes(input)) {
+
+                    card.style.display = "block";
+
+                } else {
+
+                    card.style.display = "none";
+
+                }
+
+            });
+
+        }
+
+
+
+        // COPIER UN SCRIPT
+
+        async function copyScript(file) {
+
+            try {
+
+                const response =
+                    await fetch(file);
+
+                const text =
+                    await response.text();
+
+                await navigator.clipboard.writeText(text);
+
+                alert("Script copied!");
+
+            } catch (error) {
+
+                alert("Unable to copy the script.");
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+</html>
+```
